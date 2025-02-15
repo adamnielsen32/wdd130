@@ -1,0 +1,27 @@
+
+
+* {
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+} 
+ 
+img {
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+h1:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    background-color: steelblue;
+    color: white;
+    
+}
+footer p {
+    font-size: 1.5em;
+    padding: 25px;
+}
