@@ -146,6 +146,7 @@ nav {
     justify-content: space-around;
     grid-row: 2/3;
     z-index: 1;
+    background-color: #004529;
 }
 #logo_link {
     padding-top: 5px;
@@ -244,4 +245,14 @@ nav {
         margin-top: 25px;
     }
 }
-         
+.rivers-grid {
+    text-align: center;
+    margin: 50px 50px 50px 50px;
+}
+    
+.river-paragraph {
+    margin-bottom: 50px;
+}
+.river-image {
+    margin: 50px 50px 50px 50px;
+}
