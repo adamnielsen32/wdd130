@@ -1,1 +1,113 @@
 @import url('https://fonts.googleapis.com/css?family=DM+Serif+Text|Unna');
+
+
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo logo logo" "nav nav nav";
+    background-color: #f7dada;
+    justify-content: right;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    
+}
+.logo_link {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    column-width: 150px;
+    align-items: center;
+    margin: auto 0;
+    justify-content: space-around;
+    grid-area: logo;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#logo {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    column-width: 150px;
+    text-align: center;
+    margin: auto 0;
+    justify-content: right;
+    grid-area: logo;
+
+}
+nav {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f7dada;
+
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-family: "DM serif text", "unna", sans-serif;
+}
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+nav a:active {
+    color: #004529;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 150px;
+    text-align: center;
+    margin: auto ;
+    margin-bottom: 50px;
+    font-family: "DM serif text", "unna", sans-serif;
+    margin-top: 50px;
+}
+.custom-cakes {
+    grid-column: 2/3;
+    text-align: center;
+    margin-right: 50px;
+    color: #09070a;
+    height: 100%;
+}
+.cake-blox {
+    grid-column: 3/4;
+    height: 100%;
+    margin-right: 50px;
+}
+.wedding-cake {
+    grid-column: 4 / 5;
+    margin-left: 50px;
+    height: 100%;
+}
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f7dada;
+    color: white;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.contact {
+    text-align: center;
+    color: #09070a;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-family: "DM serif text", "unna", sans-serif;
+}
+footer a:hover {
+    background-color: black;
+    color: white;
+}
+footer p {
+    font-size: 1.2em;
+    font-family: "DM serif text", "unna", sans-serif;
+    color: #09070a;
+}
