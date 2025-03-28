@@ -111,3 +111,7 @@ footer p {
     font-family: "DM serif text", "unna", sans-serif;
     color: #09070a;
 }
+.aboutmeimg {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
