@@ -23,6 +23,7 @@ header {
     grid-area: logo;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 200px;
 }
 #logo {
     grid-column: 1 / 5;
@@ -32,6 +33,7 @@ header {
     margin: auto 0;
     justify-content: right;
     grid-area: logo;
+    margin-left: 200px;
 
 }
 nav {
@@ -114,4 +116,27 @@ footer p {
 .aboutmeimg {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+.aboutme_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 150px;
+    text-align: center;
+    margin: auto ;
+    margin-bottom: 50px;
+    font-family: "DM serif text", "unna", sans-serif;
+    margin-top: 50px;
+}
+.aboutme_img {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin-right: 50px;
+    color: #09070a;
+    height: 50%;
+}
+.aboutme_text {
+    grid-column: 3 / 4;
+    height: 50%;
+   margin-left: 50px;
+   margin-top: 250px;
 }
