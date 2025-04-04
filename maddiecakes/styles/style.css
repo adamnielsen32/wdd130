@@ -4,46 +4,34 @@
 
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "logo logo logo" "nav nav nav";
+    display: flex; /* Use flexbox for simpler centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
     background-color: #f7dada;
-    justify-content: right;
     font-family: "Open Sans", Helvetica, sans-serif;
+    padding-top: 20px; /* Add space between the top of the page and the header content */
     
 }
-.logo_link {
-    grid-column: 2 / 5;
-    grid-row: 1 / 2;
-    column-width: 150px;
-    align-items: center;
-    margin: auto 0;
-    justify-content: space-around;
-    grid-area: logo;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 200px;
+#logo_link {
+    margin: 0; /* Remove unnecessary margins */
+    display: flex;
+    justify-content: center; /* Center content inside the flex container */
+    align-items: center; /* Center content vertically */
+    margin-top: 30px; /* Adjust margin for additional spacing if needed */
 }
 #logo {
-    grid-column: 1 / 5;
-    grid-row: 1 / 2;
-    column-width: 150px;
-    text-align: center;
-    margin: auto 0;
-    justify-content: right;
-    grid-area: logo;
-    margin-left: 200px;
-
+    margin: 0; /* Remove unnecessary margins */
+    display: block; /* Ensure proper centering */
 }
 nav {
-    grid-column: 2 / 5;
-    grid-row: 2 / 3;
+    width: 100%; /* Ensure nav spans the full width */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Space out navigation links evenly */
     align-items: center;
     background-color: #f7dada;
-
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 nav a {
     text-decoration: none;
@@ -140,4 +128,24 @@ footer p {
     height: 50%;
    margin-left: 50px;
    margin-top: 250px;
+}
+.classes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    text-align: center;
+    margin: auto ;
+    margin-bottom: 50px;
+    font-family: "DM serif text", "unna", sans-serif;
+    margin-top: 100px;
+}
+#cake-class {
+    grid-column: 1 / 2;
+    text-align: center;
+    
+}
+#sourdough-class {
+    grid-column: 2 / 3;
+    height: 100%;
+    
 }
